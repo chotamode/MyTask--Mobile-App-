@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_creation_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".TaskCreation">
+
+    <include
+        android:id="@+id/top_nav"
+        layout="@layout/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <me.eduard.androidApp.CustomScrollView
+        android:id="@+id/scroll_view_creation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/map_creation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/choose_category"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingStart="15dp"
+                android:text="Choose a category"
+                android:textColor="#5C5B5B"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="210dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="2dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Categories"
+                    android:textColor="@color/black"
+                    android:textSize="19dp" />
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="#FFFFFF" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nameTask"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:paddingStart="15dp"
+                android:text="Name of the task"
+                android:textColor="#5C5B5B"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/task_name_creation"
+                android:layout_width="380dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lighter_border_button"
+                android:clickable="true"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Location"
+                android:textColor="#5C5B5B"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="276dp" />
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                tools:context=".MapsActivity" />
+
+            <TextView
+                android:id="@+id/description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Description"
+                android:textColor="#5C5B5B"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/task_description_creation"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/lighter_border_button"
+                android:clickable="true"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="177dp" />
+
+            <TextView
+                android:id="@+id/small_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Small description"
+                android:textColor="#5C5B5B"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/task_small_description"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/lighter_border_button"
+                android:clickable="true"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="177dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Price"
+                android:textColor="#5C5B5B"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="439dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/priceSpace"
+                    android:layout_width="108dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/ic_border_blue"
+                    android:inputType="number"
+                    android:paddingStart="15dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/czk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="CZK" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/addPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Add photo"
+                android:textColor="#5C5B5B"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="360dp" />
+
+            <ImageView
+                android:id="@+id/takePhoto"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="80dp"
+                app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="43dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-40dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="393dp" />
+
+            <Button
+                android:id="@+id/create"
+                android:layout_width="170dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/border_button"
+                android:backgroundTint="@color/colorBackground"
+                android:clickable="true"
+                android:text="Create"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+    </me.eduard.androidApp.CustomScrollView>
+
+
+</LinearLayout>

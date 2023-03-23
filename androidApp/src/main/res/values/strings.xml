@@ -1,0 +1,43 @@
+<resources>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="textview">TextView</string>
+    <string name="mytask">mytask</string>
+    <string name="loopa_poopa">Loopa Poopa</string>
+    <string name="name">Name</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="task_name">Task name</string>
+    <string name="text_description">Text description</string>
+    <string name="some_message">Some message</string>
+    <string name="create">Create</string>
+    <string name="back">Back</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="mail">E-mail</string>
+    <string name="phone">Phone</string>
+    <string name="birthdate">Birthdate</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="change_date">Change Date</string>
+    <string name="name_of_the_task">Name of the task</string>
+    <string name="czk">CZK</string>
+    <string name="image">image</string>
+    <string name="add_photo">Add photo</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="candidate_name">Candidate name</string>
+    <string name="hello">Hello</string>
+    <string name="nutritionist_consultation">Nutritionist consultation</string>
+    <string name="maps_api_key">AIzaSyCsR7IrR0k43x5Fdczloxn8sK1trv9AY8k</string>
+    <string-array name="categories_array">
+        <item></item>
+        <item>business</item>
+        <item>travel</item>
+        <item>cars</item>
+        <item>real estate</item>
+        <item>pets</item>
+        <item>video</item>
+        <item>art</item>
+        <item>garden</item>
+    </string-array>
+</resources>

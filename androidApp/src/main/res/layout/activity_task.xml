@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".AllTasks">
+
+    <include
+        android:id="@+id/top_nav"
+        layout="@layout/top_nav"
+        android:layout_width="413dp"
+        android:layout_height="49dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/task_activity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="389dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/task_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_task_icon" />
+
+                <LinearLayout
+                    android:layout_width="321dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/name_task"
+                            android:layout_width="195dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="20dp"
+                            android:enabled="false"
+                            android:inputType="text"
+                            android:paddingLeft="0dp"
+                            android:paddingRight="0dp"
+                            android:paddingBottom="0dp"
+                            android:text="@string/nutritionist_consultation"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/price_owner"
+                            android:layout_width="65dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/ic_price"
+                            android:enabled="false"
+                            android:inputType="number"
+                            android:gravity="center_horizontal"
+                            android:text="1000"
+                            android:textAlignment="center"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/status_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:paddingLeft="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:text="I need nutritionist consultation every month."
+                        android:textColor="#434242"
+                        android:textSize="13dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/owner_task_activity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="owner"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/owner"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-133dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginRight="32dp"
+                            android:layout_weight="1"
+                            android:text="Bob Black"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold|italic" />
+
+                        <TextView
+                            android:id="@+id/performer_task_activity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="performer"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/performer"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-165dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="6dp"
+                            android:text="Alice White"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold|italic"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_task_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewTask"
+                    android:layout_width="match_parent"
+                    android:layout_height="294dp"
+                    android:visibility="gone"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    tools:context=".MapsActivity" />
+
+                <TextView
+                    android:id="@+id/detailed_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detailed description"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="134dp"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="0dp"
+                    android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum scelerisque sagittis. Aliquam aliquet urna id lectus varius bibendum. Sed sed elementum risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ac eros risus. Ut vel turpis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at elementum sapien. Etiam a tortor venenatis, suscipit felis at, porta libero. "
+                    android:textColor="#3C3B3B" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/hirer_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/hirer_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hirer message"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum scelerisque sagittis. Aliquam aliquet urna id lectus varius bibendum. Sed sed elementum risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ac eros risus. Ut vel turpis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at elementum sapien. Etiam a tortor venenatis, suscipit felis at, porta libero. "
+                    android:textColor="#3C3B3B"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/owner_message_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/candidates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/performer_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/performer_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Performer message"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="134dp"
+                    android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum scelerisque sagittis. Aliquam aliquet urna id lectus varius bibendum. Sed sed elementum risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ac eros risus. Ut vel turpis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at elementum sapien. Etiam a tortor venenatis, suscipit felis at, porta libero. "
+                    android:textColor="#3C3B3B"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/perf_message_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="write your message here"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stars_layout"
+                android:layout_width="194dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/star" />
+
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/perf_buttons"
+                layout="@layout/performer_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/owner_but"
+                layout="@layout/owner_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SideMenu">
+
+    <include
+        android:id="@+id/top_nav"
+        layout="@layout/top_nav"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spinner_1s_200px" />
+
+            <ImageView
+                android:id="@+id/side_menu_pic"
+                android:layout_width="111dp"
+                android:layout_height="111dp"
+
+                android:background="@drawable/profile"
+                android:visibility="gone"
+                tools:ignore="MissingConstraints" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="169dp"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:paddingLeft="10dp"
+                android:text="@string/loopa_poopa"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settings"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/lighter_border_button"
+                android:drawableLeft="@drawable/ic_baseline_settings_24"
+                android:elevation="7dp"
+                android:paddingStart="10dp"
+                android:paddingTop="7dp"
+                android:text="Settings"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/myTasks"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/lighter_border_button"
+                android:drawableLeft="@drawable/ic_baseline_scatter_plot_24"
+                android:elevation="7dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="7dp"
+                android:text="My tasks"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/lighter_border_button"
+                android:drawableLeft="@drawable/ic_baseline_help_24"
+                android:elevation="7dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:text="Help"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/lighter_border_button"
+                android:drawableLeft="@drawable/ic_baseline_logout_24"
+                android:elevation="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:text="Log_out"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

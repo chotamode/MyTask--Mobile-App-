@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/done_performer"
+        android:layout_width="74dp"
+        android:layout_height="32dp"
+        android:background="@drawable/lighter_border_button"
+        android:backgroundTint="#0909DC"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="2dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="25dp"
+        android:text="Done"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/abandon_performer"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/lighter_border_button"
+        android:backgroundTint="#CF0303"
+
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="2dp"
+        android:text="Abandon"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+         />
+</LinearLayout>

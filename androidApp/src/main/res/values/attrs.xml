@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="menu_buttons_layout">
+
+    </declare-styleable>
+
+    <declare-styleable name="TaskElement">
+        <attr format="string" name="text"/>
+        <attr format="reference" name="image"/>
+    </declare-styleable>
+
+</resources>

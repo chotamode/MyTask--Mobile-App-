@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/taskview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_task_icon" />
+
+    <LinearLayout
+        android:layout_width="251dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/task_main_page_name"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="Business consultation"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/task_main_page_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="I offer business cosultation."
+            android:textColor="#323030" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="39dp"
+            android:background="#8F333333" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/task_main_page_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000 Kc"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1077444813785",
+    "firebase_url": "https://small-talk-rilwyr.firebaseio.com",
+    "project_id": "small-talk-rilwyr",
+    "storage_bucket": "small-talk-rilwyr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1077444813785:android:f58ba73797072991d2afc8",
+        "android_client_info": {
+          "package_name": "me.eduard.androidApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1077444813785-nneusdklaqaib7a0r4j9l5ed16lp3ubm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXK8OKu7F58FMVdF55YwAHESsxvmYFEMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1077444813785-nneusdklaqaib7a0r4j9l5ed16lp3ubm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

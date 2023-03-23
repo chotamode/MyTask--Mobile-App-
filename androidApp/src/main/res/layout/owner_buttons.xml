@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp">
+
+    <Button
+        android:id="@+id/done_creator"
+        android:layout_width="74dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/lighter_border_button"
+        android:backgroundTint="#0909DC"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="2dp"
+        android:text="Done"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/edit_creator"
+        android:layout_width="74dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/lighter_border_button"
+        android:backgroundTint="#0909DC"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="2dp"
+        android:text="Edit"
+        android:layout_gravity="left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/delete_creator"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/lighter_border_button"
+        android:backgroundTint="#CF0303"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="2dp"
+        android:text="Delete"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        app:layout_editor_absoluteY="60dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/repeat_button"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="-200dp"
+        android:layout_marginTop="105dp"
+        android:background="@drawable/ic_repeat"
+        android:visibility="visible"
+        app:layout_editor_absoluteX="180dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <Button
+        android:id="@+id/find_candidates"
+        android:layout_width="174dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginLeft="-153dp"
+        android:layout_marginTop="-9dp"
+        android:layout_weight="1"
+        android:background="@drawable/lighter_border_button"
+        android:backgroundTint="#0909DC"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="2dp"
+        android:text="Find new candidates"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:visibility="visible"
+        tools:ignore="TouchTargetSizeCheck" />
+</LinearLayout>

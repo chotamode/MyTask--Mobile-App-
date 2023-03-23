@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="331dp"
+        android:layout_height="73dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="12dp"
+        android:background="@drawable/lighter_border_button"
+        >
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="75dp">
+
+
+            <LinearLayout
+                android:id="@+id/cand_lay"
+                android:layout_width="100dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/candidate_name"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans"
+                    android:paddingBottom="4dp"
+                    android:text="Alice White"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/candidate_message"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/some_message"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="177dp"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/price_owner_acceptation"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_price"
+                android:text="1000"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/choose" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

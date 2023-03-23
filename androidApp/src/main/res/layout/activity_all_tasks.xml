@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    tools:context=".AllTasks">
+
+    <include
+        android:id="@+id/top_nav_no_back"
+        layout="@layout/top_nav_no_back"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp" />
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="What are you looking for?"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="@color/white"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="19dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="80dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-19dp"
+        android:layout_marginBottom="-30dp"
+        android:background="@drawable/ic_vector_black"
+        android:paddingRight="98dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="105dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchBar"
+            android:layout_width="240dp"
+            android:layout_height="42dp"
+            android:background="@drawable/lighter_border_button"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:layout_marginLeft="0dp"
+            android:paddingLeft="20dp"
+            app:layout_editor_absoluteX="16dp"
+            app:layout_editor_absoluteY="125dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/search_icon" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="399dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/alltaskslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_new_task"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="74dp"
+        app:cardBackgroundColor="@color/colorBackground">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="3dp"
+            android:layout_gravity=""
+            app:srcCompat="@drawable/ic_add" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

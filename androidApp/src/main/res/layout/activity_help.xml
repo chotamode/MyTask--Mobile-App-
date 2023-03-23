@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="729dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/help_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:layout_marginBottom="18dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-medium"
+                android:text="Application contains the following features:"
+                 android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="1. Login page.
+From here the user can login to the app."
+                android:layout_marginLeft="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#3A3939"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="2. Register page. From here the user can register to the app."
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#3A3939"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="3. Edit user profile. Users can edit the information in their profile."                android:layout_marginLeft="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#3A3939"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="4. Page listing all task.
+If a user does not want to choose a category, they can discover all tasks in all categories."
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#3A3939"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="5. Page listing all tasks in a certain category. After choosing a category, users can discover all the tasks in the category."
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#3A3939"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="6. Page listing all tasks. If a user does not want to choose a category, they can discover all tasks in all categories."
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#3A3939"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="7. Page listing all tasks. If a user does not want to choose a category, they can discover all tasks in all categories."
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#3A3939"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="8. Accept a task
+Users can accept a task and write their price."
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="15dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                android:textColor="#3A3939"
+                android:textSize="18dp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+
+    <include
+        android:id="@+id/top_nav"
+        layout="@layout/top_nav"
+        android:layout_width="413dp"
+        android:layout_height="49dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
